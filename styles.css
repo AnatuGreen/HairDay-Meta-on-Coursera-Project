@@ -45,6 +45,7 @@ nav ul li {
 nav a:link{
     text-decoration: none;
     color: aliceblue;
+    transform: text-decoration 2s;
 }
 
 nav a:visited{
@@ -53,10 +54,11 @@ nav a:visited{
 
 nav a:hover{
     color: blanchedalmond;
+    text-decoration: overline;
 }
 
 section{
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -83,7 +85,6 @@ section{
     margin-top: -8rem;
     display: flex;
     flex-direction: column;
-
 }
 
 .discountInHero {
@@ -193,9 +194,84 @@ article button {
     font-size: 1.2rem;
     color: aliceblue;
     border-radius: 1.5rem;
+    transition: width 1s ease-in;
+}
 
+article button:hover {
+    width: 8.5rem;
+    background-color: rgba(137, 43, 226, 0.688);
 }
 
 article h3 {
     margin-bottom: 1rem;
+}
+
+footer {
+    height: 10rem;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+}
+
+footer div:nth-child(1) {
+    width: 50%;
+    background-color: rgb(110, 29, 0);
+    display: flex;align-items: center;
+    padding: 2rem;
+}
+
+.footerLogo {
+    width: 30%;
+}
+
+footer div:nth-child(2) {
+    display: flex;
+justify-content: center;
+    align-items: center;
+    padding-left: 3rem;
+}
+footer div p {
+    color: aliceblue;
+    text-align: center;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a shadow effect if desired */
+  z-index: 100;
+}
+
+
+.aboutSection {
+    padding: 0 2rem ;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./images/Sweet\ cute\ girl.jpg);
+    background-position: center;
+}
+
+.aboutSection p {
+    width: 50%;
+    margin: 2rem;
+    color: azure;
+}
+
+.aboutSection h2 {
+    color: antiquewhite;
+}
+
+@media (max-width: 767px) {
+    section * {
+        width: 100%;
+    }
+
+    .hero h1{
+        font-size: 15rem;
+        line-height: 13rem;
+        margin-left: 0;
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+    }
 }

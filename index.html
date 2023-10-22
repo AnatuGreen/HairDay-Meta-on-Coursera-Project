@@ -3,20 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hair Day Saloon!</title>
+    <title>Hair Day Salon!</title>
+    <meta name="author" content="Anaturuchi Iroaapli">
+    <meta name="description" content="Hair Day is a boutique hair salon that specializes in cut, color and styling.">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <img src="./images/Artboard 1.png" alt="Hair day logo">
     </header>
-    <nav>
+    <nav id="navbar">
         <ul>
             <li><a href="#">Home Page</a></li>
-            <li><a href="about.html">About Us</a></li>
+            <li><a href="#about">About Us</a></li>
             <li><a href="staff.html">Meet Our Staff</a></li>
             <li><a href="#appointment">Book Appointment</a></li>
-            <li><a href="#">Call Us Now</a></li>
+            <li><a href="#blog">Articles</a></li>
         </ul>
     </nav>
     <main>
@@ -29,7 +31,7 @@
                 50% off when you book online
             </h3>
         </section>
-        <section>
+        <section id="appointment">
             <h2>
                 Book Colouring <br> Appointment.
             </h2>
@@ -49,11 +51,11 @@
                 <input type="submit">
             </form>
         </section>
-        <section class="blogSection">
+        <section class="blogSection" id="blog">
             <h2>
                 Explore Some of Our Articles
             </h2>
-            <div class="blogArticlesCont">
+            <div class="blogArticlesCont" >
                 <article>
                     <img class="blogImg" src="images/man with anime hair and short beard.jpg">
                     <div class="blogExcTextsCont">
@@ -93,14 +95,38 @@
                 </article>
             </div>
         </section>
+        <section class="aboutSection" id="about">
+            <h2>
+                About Hair Day
+            </h2>
+            <p>
+                Based in Madison, Wisconsin, Hair Day is a boutique hair salon that specializes in cut,
+                 color and styling. Hair Day also offers makeup and nail services, prides itself on
+                 its warm and relaxing atmosphere and is best known
+                 for edgy hair colors and on-trend cuts. The salon can only accommodate a
+                 small number of coloring appointments each week, so clients need to book far in advance.
+                  To keep clients inspired between appointments, the employees share makeup and nail tutorials
+                   on the Hair Day website.
+
+            </p>
+
+            <p>
+                Pria, the owner of Hair Day, earned her certificate as a colorist and
+                immediately started specializing in edgy, custom coloring techniques.
+                She wanted to create a "treat yourself" environment for her clients. Pria
+                opened the salon with her good friend and talented hairdresser, Garry. They have
+                 a staff of seven: two stylists, three colorists, one manicurist and one make-up artist.
+            </p>
+        </section>
     </main>
     <footer>
         <div>
-
+            <img src="./images/hairday-logo-wide.png" alt="Hair day logo" class="footerLogo">
         </div>
         <div>
-
+            <p>Copyright Hair Day 2023 && Developed by Anaturuchi Iroapali <a href="#"p>
         </div>
     </footer>
+    <script src="script.js" ></script>
 </body>
 </html>
