@@ -67,7 +67,7 @@ section{
 
 .hero{
     background-color: aqua;
-    background-image: url(../images/hair-color-girl-bg.jpg);
+    background-image: url(./images/hair-color-girl-bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -102,7 +102,7 @@ form {
     background-color: rgba(194, 61, 0, 0.919);
     padding: 2rem;
     margin-top: 2rem;
-    background-image: url(../images/hair-color-girl-bg.jpg);
+    background-image: url(./images/hair-color-girl-bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
 }
